@@ -20,6 +20,12 @@ const hodimSchema = new Schema({
     maoshi: {
         type: Number,
     },
+    bemorlari: [
+        {
+            type: mongoose.Schema.Types.ObjectId,
+            ref: "Bemorlar",
+        },
+    ],
     ish_vaqti: {
         type: String,
     },

@@ -6,6 +6,10 @@ const doriSchema = new Schema({
         type: String,
         required: true,
     },
+    yetkazib_beruvchi: {
+        type: mongoose.Schema.Types.ObjectId,
+        ref: "YetkazibBeruvchilar",
+    },
     tarif: {
         type: String,
     },

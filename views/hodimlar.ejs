@@ -66,24 +66,12 @@
             <h1 class="mb-4">Barcha Hodimlar</h1>
             <div class="row">
                 <% hodimlar.forEach(hodim => { %>
-                <div class="col-md-6 mt-4 d-flex">
+                <div class="col-md-4 col-lg-3 col-sm-6 mt-4 d-flex">
                     <div class="card" style="width: 98%">
                         <div class="card-body">
                             <div
                                 class="d-flex flex-wrap justify-content-between"
                             >
-                                <div>
-                                    <h4 class="card-title">
-                                        <%= hodim.fish %>
-                                    </h4>
-                                    <div class="card-subtitle text-muted mb-2">
-                                        <%= hodim.lavozimi %> - <%=
-                                        hodim.ish_vaqti %>
-                                    </div>
-                                    <div class="card-text mb-2">
-                                        <%= hodim.manzili %>
-                                    </div>
-                                </div>
                                 <div class="card mr-4">
                                     <img
                                         src="<%= hodim.rasmi %>"
